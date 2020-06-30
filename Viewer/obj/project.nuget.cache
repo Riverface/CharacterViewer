@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AMjWT9VAgTDfdFi3g0skD3unQRsRC+TeQIqPUW98aQ3Xwb3UhZps1k/JtO5rF9MJOSubvyflLWNFR08wQ64Ofg==",
+  "dgSpecHash": "WECcu1bImbunzxWrmuknomuD/9/ajExvtSeHoJMtTGmq9dzVRL5ZDyqiMv4drwUaDLO8KBshih9OWvM57ZuSSw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Programming\\CharacterViewer\\CharacterViewerFrontend.Solution\\Viewer\\Viewer.csproj",
+  "projectFilePath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\Viewer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sonos\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\sonos\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",

@@ -16,7 +16,7 @@
           <ul>
             @foreach (Character Character in Model)
             {
-              <li>@Html.ActionLink($"{Character.Description}", "Details", new { id = Character.CharacterId })</li>
+              <li>@Html.ActionLink($"{Character.Name}", "Details", new { id = Character.CharacterId })</li>
             }
           </ul>
         }

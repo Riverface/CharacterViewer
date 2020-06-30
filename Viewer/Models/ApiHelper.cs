@@ -21,21 +21,21 @@ namespace CretaceousClient.Models
             return response.Content;
         }
 
-        public static async Task Post(string newAnimal)
+        public static async Task Post(string newCharacter)
         {
             RestClient client = new RestClient("http://localhost:5004/api");
             RestRequest request = new RestRequest($"characters", Method.POST);
             request.AddHeader("Content-Type", "application/json");
-            request.AddJsonBody(newAnimal);
+            request.AddJsonBody(newCharacter);
             var response = await client.ExecuteTaskAsync(request);
         }
 
-        public static async Task Put(int id, string newAnimal)
+        public static async Task Put(int id, string newCharacter)
         {
             RestClient client = new RestClient("http://localhost:5004/api");
             RestRequest request = new RestRequest($"characters/{id}", Method.PUT);
             request.AddHeader("Content-Type", "application/json");
-            request.AddJsonBody(newAnimal);
+            request.AddJsonBody(newCharacter);
             var response = await client.ExecuteTaskAsync(request);
         }
 

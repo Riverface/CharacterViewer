@@ -12,8 +12,8 @@
   <div class='entry'>
     @using (Html.BeginForm())
     {
-      @Html.LabelFor(model => model.Description)
-      @Html.TextBoxFor(model => model.Description, new{@required = "required"})
+      @Html.LabelFor(model => model.Name)
+      @Html.TextBoxFor(model => model.Name, new{@required = "required"})
       @Html.DropDownList("TraitId")
       <input type="submit" value="Add new Character" class="btn btn-default" />
     }

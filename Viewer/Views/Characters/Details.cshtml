@@ -11,7 +11,7 @@
 <div class='entry'>
   <hr />
   <h3>
-    @Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)
+    @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
   </h3>
   @if(@Model.Traits.Count == 0)
   {
@@ -26,7 +26,7 @@
       <li>@join.Trait.Name</li>
       @using (Html.BeginForm("DeleteTrait", "Characters"))
       {
-        @Html.Hidden("joinId", @join.TraitCharacterId)
+        @Html.Hidden("joinId", @join.CharacterTraitId)
         if(User.Identity.IsAuthenticated)
         {
           <input type="submit" value="Delete" />

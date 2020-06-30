@@ -6,13 +6,13 @@
 <div>
   <div class='entryLabel'>
     <h2>Add a Trait</h2>
-    <h4>Add a Trait to this Character: @Html.DisplayFor(model => model.Description)</h4>
+    <h4>Add a Trait to this Character: @Html.DisplayFor(model => model.Name)</h4>
   </div>
   <div class='entry'>
       @using (Html.BeginForm())
       {
         @Html.HiddenFor(model => model.CharacterId)
-        @Html.HiddenFor(model => model.Description)
+        @Html.HiddenFor(model => model.Name)
         @Html.Label("Select Trait")
         @Html.DropDownList("TraitId")
         <input type="submit" value="Save" />

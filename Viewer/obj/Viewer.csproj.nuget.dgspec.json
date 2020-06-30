@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Programming\\CharacterViewer\\CharacterViewerFrontend.Solution\\Viewer\\Viewer.csproj": {}
+    "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\Viewer.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Programming\\CharacterViewer\\CharacterViewerFrontend.Solution\\Viewer\\Viewer.csproj": {
+    "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\Viewer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Programming\\CharacterViewer\\CharacterViewerFrontend.Solution\\Viewer\\Viewer.csproj",
+        "projectUniqueName": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\Viewer.csproj",
         "projectName": "Viewer",
-        "projectPath": "D:\\Projects\\Programming\\CharacterViewer\\CharacterViewerFrontend.Solution\\Viewer\\Viewer.csproj",
+        "projectPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\Viewer.csproj",
         "packagesPath": "C:\\Users\\sonos\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Programming\\CharacterViewer\\CharacterViewerFrontend.Solution\\Viewer\\obj\\",
+        "outputPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

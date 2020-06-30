@@ -2961,13 +2961,13 @@
   "RootNamespace": "Viewer",
   "Documents": [
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Traits\\Index.cshtml",
+      "TargetPath": "Views\\Traits\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Character\\Edit.cshtml",
-      "TargetPath": "Views\\Character\\Edit.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2986,23 +2986,23 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Character\\Details.cshtml",
-      "TargetPath": "Views\\Character\\Details.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Traits\\Details.cshtml",
+      "TargetPath": "Views\\Traits\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Trait\\Create.cshtml",
-      "TargetPath": "Views\\Trait\\Create.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Characters\\Delete.cshtml",
+      "TargetPath": "Views\\Characters\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Character\\AddTrait.cshtml",
-      "TargetPath": "Views\\Character\\AddTrait.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Characters\\AddTrait.cshtml",
+      "TargetPath": "Views\\Characters\\AddTrait.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Trait\\Edit.cshtml",
-      "TargetPath": "Views\\Trait\\Edit.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Traits\\Delete.cshtml",
+      "TargetPath": "Views\\Traits\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3011,28 +3011,28 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Character\\Delete.cshtml",
-      "TargetPath": "Views\\Character\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Trait\\Delete.cshtml",
-      "TargetPath": "Views\\Trait\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Character\\Index.cshtml",
-      "TargetPath": "Views\\Character\\Index.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Characters\\Edit.cshtml",
+      "TargetPath": "Views\\Characters\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Character\\Create.cshtml",
-      "TargetPath": "Views\\Character\\Create.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Characters\\Details.cshtml",
+      "TargetPath": "Views\\Characters\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Characters\\Create.cshtml",
+      "TargetPath": "Views\\Characters\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Traits\\Create.cshtml",
+      "TargetPath": "Views\\Traits\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3041,13 +3041,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Trait\\Details.cshtml",
-      "TargetPath": "Views\\Trait\\Details.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Characters\\Index.cshtml",
+      "TargetPath": "Views\\Characters\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Trait\\Index.cshtml",
-      "TargetPath": "Views\\Trait\\Index.cshtml",
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Traits\\Edit.cshtml",
+      "TargetPath": "Views\\Traits\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {

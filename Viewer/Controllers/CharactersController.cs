@@ -24,7 +24,7 @@ namespace Viewer.Controllers
 
         public async Task<ActionResult> Index()
         {
-            List<Character> characters = _db.Characters.ToList();
+            List<Character> characters = await _db.Characters.ToList();
             return View(characters);
         }
 
