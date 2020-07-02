@@ -17,6 +17,15 @@
             @foreach (Character Character in Model)
             {
               <li>@Html.ActionLink($"{Character.Name}", "Details", new { id = Character.CharacterId })</li>
+              <li>@Html.ActionLink($"{Character.Name}", "Details", "Characters", new {id=Character.CharacterId})</li>
+              <li>@Html.ActionLink($"{Character.Might}", "Details", "Characters", new {id=Character.CharacterId})</li>
+              <li>@Html.ActionLink($"{Character.Spryness}", "Details", "Characters", new {id=Character.CharacterId})</li>
+              <li>@Html.ActionLink($"{Character.Judgement}", "Details", "Characters", new {id=Character.CharacterId})</li>
+              <li>@Html.ActionLink($"{Character.Echo}", "Details", "Characters", new {id=Character.CharacterId})</li>
+              <li>@Html.ActionLink($"{Character.Magnetism}", "Details", "Characters", new {id=Character.CharacterId})</li>
+              <li>@Html.ActionLink($"{Character.Fortune}", "Details", "Characters", new {id=Character.CharacterId})</li>
+              <li>@Html.ActionLink($"{Character.Bio}", "Details", "Characters", new {id=Character.CharacterId})</li>
+              <li>@Html.ActionLink($"{Character.Name}", "Details", "Characters", new {id=Character.CharacterId})</li>
             }
           </ul>
         }

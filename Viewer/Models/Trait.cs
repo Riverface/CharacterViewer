@@ -14,71 +14,75 @@ namespace Viewer.Models
         [Required]
         public string Name { get; set; }
 
-        // Character attributes
+        // Trait attributes
         [Required]
-        [Range(1, 20, ErrorMessage = "Stats go from 1 to 20.")]
+        [Range(-20, 20, ErrorMessage = "Stats go from 1 to 20.")]
         public int Might { get; set; }
 
         [Required]
-        [Range(1, 20, ErrorMessage = "Stats go from 1 to 20.")]
+        [Range(-20, 20, ErrorMessage = "Stats go from 1 to 20.")]
         public int Spryness { get; set; }
 
         [Required]
-        [Range(1, 20, ErrorMessage = "Stats go from 1 to 20.")]
+        [Range(-20, 20, ErrorMessage = "Stats go from 1 to 20.")]
         public int Judgement { get; set; }
 
         [Required]
-        [Range(1, 20, ErrorMessage = "Stats go from 1 to 20.")]
+        [Range(-20, 20, ErrorMessage = "Stats go from 1 to 20.")]
         public int Echo { get; set; }
 
         [Required]
-        [Range(1, 20, ErrorMessage = "Stats go from 1 to 20.")]
+        [Range(-20, 20, ErrorMessage = "Stats go from 1 to 20.")]
         public int Magnetism { get; set; }
 
         [Required]
-        [Range(1, 20, ErrorMessage = "Stats go from 1 to 20.")]
+        [Range(-20, 20, ErrorMessage = "Stats go from 1 to 20.")]
         public int Fortune { get; set; }
-        public ICollection<CharacterTrait> Characters { get; set; }
+        public virtual ICollection<CharacterTrait> Characters { get; }
 
         //Stretch
         // public List<Delegate> Contextuals;
-
-        public static List<Character> GetCharacters()
+        public Trait()
         {
-            var apiCallTask = ApiHelper.GetAll();
+            this.Characters = new HashSet<CharacterTrait>();
+        }
+
+        public static List<Trait> GetTraits()
+        {
+            var apiCallTask = TraitApiHelper.GetAll();
             var result = apiCallTask.Result;
 
             JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
-            List<Character> characterList = JsonConvert.DeserializeObject<List<Character>>(jsonResponse.ToString());
+            List<Trait> traitList = JsonConvert.DeserializeObject<List<Trait>>(jsonResponse.ToString());
 
-            return characterList;
+            return traitList;
         }
 
-        public static Character GetDetails(int id)
+        public static Trait GetDetails(int id)
         {
-            var apiCallTask = ApiHelper.Get(id);
+            var apiCallTask = TraitApiHelper.Get(id);
             var result = apiCallTask.Result;
 
             JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(result);
-            Character character = JsonConvert.DeserializeObject<Character>(jsonResponse.ToString());
-            return character;
+            Trait trait = JsonConvert.DeserializeObject<Trait>(jsonResponse.ToString());
+            return trait;
         }
 
-        public static void Post(Character character)
+        public static void Post(Trait trait)
         {
-            string jsonCharacter = JsonConvert.SerializeObject(character);
-            var apiCallTask = ApiHelper.Post(jsonCharacter);
+            string jsonTrait = JsonConvert.SerializeObject(trait);
+            var apiCallTask = TraitApiHelper.Post(jsonTrait);
         }
 
-        public static void Put(Character character)
+        public static void Put(Trait trait)
         {
-            string jsonCharacter = JsonConvert.SerializeObject(character);
-            var apiCallTask = ApiHelper.Put(character.CharacterId, jsonCharacter);
+            string jsonTrait = JsonConvert.SerializeObject(trait);
+            var apiCallTask = TraitApiHelper.Put(trait.TraitId, jsonTrait);
         }
 
         public static void Delete(int id)
         {
-            var apiCallTask = ApiHelper.Delete(id);
+            var apiCallTask = TraitApiHelper.Delete(id);
         }
     }
 }

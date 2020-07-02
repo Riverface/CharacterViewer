@@ -39,7 +39,7 @@ namespace Viewer.Controllers
         {
             var thisTrait = _db.Traits
                 .Include(trait => trait.Characters)
-                .ThenInclude(join => join.Character)
+                .ThenInclude(join => join.CharacterId)
                 .FirstOrDefault(Trait => Trait.TraitId == id);
             return View(thisTrait);
         }

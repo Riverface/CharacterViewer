@@ -43,3 +43,6 @@ D:\Projects\Programming\CharacterViewer\Viewer.Solution\viewer\obj\Debug\netcore
 D:\Projects\Programming\CharacterViewer\Viewer.Solution\viewer\obj\Debug\netcoreapp2.2\Viewer.pdb
 D:\Projects\Programming\CharacterViewer\Viewer.Solution\viewer\obj\Debug\netcoreapp2.2\Viewer.genruntimeconfig.cache
 D:\Projects\Programming\CharacterViewer\Viewer.Solution\viewer\obj\Debug\netcoreapp2.2\Viewer.csproj.CopyComplete
+D:\Projects\Programming\CharacterViewer\Viewer.Solution\viewer\obj\Debug\netcoreapp2.2\Razor\Views\Accounts\Index.cshtml.g.cs
+D:\Projects\Programming\CharacterViewer\Viewer.Solution\viewer\obj\Debug\netcoreapp2.2\Razor\Views\Accounts\Login.cshtml.g.cs
+D:\Projects\Programming\CharacterViewer\Viewer.Solution\viewer\obj\Debug\netcoreapp2.2\Razor\Views\Accounts\Register.cshtml.g.cs

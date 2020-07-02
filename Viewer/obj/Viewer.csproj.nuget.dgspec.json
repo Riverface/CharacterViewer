@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\Viewer.csproj": {}
+    "D:\\Projects\\Programming\\CharacterViewer\\Viewer.solution\\viewer\\Viewer.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\Viewer.csproj": {
+    "D:\\Projects\\Programming\\CharacterViewer\\Viewer.solution\\viewer\\Viewer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\Viewer.csproj",
+        "projectUniqueName": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.solution\\viewer\\Viewer.csproj",
         "projectName": "Viewer",
-        "projectPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\Viewer.csproj",
+        "projectPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.solution\\viewer\\Viewer.csproj",
         "packagesPath": "C:\\Users\\sonos\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\viewer\\obj\\",
+        "outputPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.solution\\viewer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.0.35, )"
@@ -60,6 +64,10 @@
               "target": "Package",
               "version": "[2.2.6, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -69,6 +77,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.2, )"
+            },
+            "PagedList.Mvc": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

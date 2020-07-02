@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Viewer.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-
+using Viewer.Models;
+using System;
 namespace Viewer.Controllers
 {
     public class CharactersController : Controller
@@ -21,11 +21,37 @@ namespace Viewer.Controllers
             _userManager = userManager;
             _db = db;
         }
-
-        public async Task<ActionResult> Index()
+        public static PagedResult<U> GetPaged<T, U>(this IQueryable<T> query,
+                                                    int page, int pageSize) where U : class
         {
-            List<Character> characters = await _db.Characters.ToList();
-            return View(characters);
+            var result = new PagedResult<U>();
+            result.CurrentPage = page;
+            result.PageSize = pageSize;
+            result.RowCount = query.Count();
+
+            var pageCount = (double)result.RowCount / pageSize;
+            result.PageCount = (int)Math.Ceiling(pageCount);
+
+            var skip = (page - 1) * pageSize;
+            result.Results = query.Skip(skip)
+                                  .Take(pageSize)
+                                  .ProjectTo<U>()
+                                  .ToList();
+
+            return result;
+        }
+        public IActionResult Index(int page = 1, int amountShown = 2, int skip = 2)
+        {
+            PagedResult<Character> characterPage = new PagedResult<Character>();
+            Character character = Character.GetDetails(i);
+            characterPage.Results.Add(character);
+            return View(characterPage);
+            // int i = page * amountShown
+            // int i = 2 * 10
+            // i = 20
+
+            // i <= amountShown
+            // i <= (page * amountShown) + amountShown
         }
 
         [Authorize]

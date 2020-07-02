@@ -1,9 +1,9 @@
 using RestSharp;
 using System.Threading.Tasks;
 
-namespace CretaceousClient.Models
+namespace Viewer.Models
 {
-    class ApiHelper
+    class CharacterApiHelper
     {
         public static async Task<string> GetAll()
         {

@@ -3031,8 +3031,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Accounts\\Index.cshtml",
+      "TargetPath": "Views\\Accounts\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Traits\\Create.cshtml",
       "TargetPath": "Views\\Traits\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Accounts\\Login.cshtml",
+      "TargetPath": "Views\\Accounts\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3043,6 +3053,11 @@
     {
       "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Characters\\Index.cshtml",
       "TargetPath": "Views\\Characters\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Views\\Accounts\\Register.cshtml",
+      "TargetPath": "Views\\Accounts\\Register.cshtml",
       "FileKind": "mvc"
     },
     {
