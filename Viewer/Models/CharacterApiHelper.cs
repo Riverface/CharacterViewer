@@ -1,6 +1,6 @@
 using RestSharp;
 using System.Threading.Tasks;
-
+using System.Collections.Generic;
 namespace Viewer.Models
 {
     class CharacterApiHelper

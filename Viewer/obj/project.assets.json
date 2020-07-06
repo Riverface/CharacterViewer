@@ -12384,11 +12384,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.solution\\viewer\\Viewer.csproj",
+      "projectUniqueName": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Viewer.csproj",
       "projectName": "Viewer",
-      "projectPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.solution\\viewer\\Viewer.csproj",
+      "projectPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Viewer.csproj",
       "packagesPath": "C:\\Users\\sonos\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.solution\\viewer\\obj\\",
+      "outputPath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

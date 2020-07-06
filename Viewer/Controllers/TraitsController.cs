@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Viewer.Models;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using Viewer.Models;
 
 namespace Viewer.Controllers
 {
@@ -14,6 +14,7 @@ namespace Viewer.Controllers
         public TraitsController(ViewerContext db)
         {
             _db = db;
+            ViewBag.robert = "a big weenie";
         }
 
         public ActionResult Index()
@@ -39,7 +40,7 @@ namespace Viewer.Controllers
         {
             var thisTrait = _db.Traits
                 .Include(trait => trait.Characters)
-                .ThenInclude(join => join.CharacterId)
+                .ThenInclude(join => join.Character)
                 .FirstOrDefault(Trait => Trait.TraitId == id);
             return View(thisTrait);
         }

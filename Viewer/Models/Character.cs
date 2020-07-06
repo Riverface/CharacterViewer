@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace Viewer.Models
 {
@@ -50,7 +51,7 @@ namespace Viewer.Models
         public int experience { get; set; }
 
         public virtual ICollection<CharacterTrait> Traits { get; }
-        
+
         public Character()
         {
             this.Traits = new HashSet<CharacterTrait>();
@@ -93,5 +94,7 @@ namespace Viewer.Models
         {
             var apiCallTask = CharacterApiHelper.Delete(id);
         }
+
+
     }
 }

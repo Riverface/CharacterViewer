@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yRK/gq/7rTMaDDc5VWCGJlOttlNQqVLHTjFIdN2N7T41f9686ZBlZAg+aHwbrg3iVTDxGqAz4CPqe+yFQ8hYzA==",
+  "dgSpecHash": "GJwjtMBq2r/0Hs/oUUJyhBwXqTZxe6Xo7KsXhdtPjR7Pk+qDvQ0vqh163iB8+pg3qZb9KYzlrXfbCVD1Ycu+SQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.solution\\viewer\\Viewer.csproj",
+  "projectFilePath": "D:\\Projects\\Programming\\CharacterViewer\\Viewer.Solution\\Viewer\\Viewer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sonos\\.nuget\\packages\\automapper\\8.1.0\\automapper.8.1.0.nupkg.sha512",
     "C:\\Users\\sonos\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
