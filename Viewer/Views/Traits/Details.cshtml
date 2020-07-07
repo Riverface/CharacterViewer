@@ -12,16 +12,35 @@
   <div class='entryLabel'>
     <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
   </div>
-
+        @Html.LabelFor(model => model.Name)
+        @Html.ValueFor(model=>model.Name)
+  <table>
+      <tr>
+          <td style="border:1px solid black">@Html.LabelFor(model=>model.Might)</td>
+          <td style="border:1px solid black">@Html.LabelFor(model=>model.Spryness)</td>
+          <td style="border:1px solid black">@Html.LabelFor(model=>model.Judgement)</td>
+          <td style="border:1px solid black">@Html.LabelFor(model=>model.Echo)</td>
+          <td style="border:1px solid black">@Html.LabelFor(model=>model.Magnetism)</td>
+          <td style="border:1px solid black">@Html.LabelFor(model=>model.Fortune)</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black">@Html.ValueFor(model=>model.Might)</td>
+        <td style="border:1px solid black">@Html.ValueFor(model=>model.Spryness)</td>
+        <td style="border:1px solid black">@Html.ValueFor(model=>model.Judgement)</td>
+        <td style="border:1px solid black">@Html.ValueFor(model=>model.Echo)</td>
+        <td style="border:1px solid black">@Html.ValueFor(model=>model.Magnetism)</td>
+        <td style="border:1px solid black">@Html.ValueFor(model=>model.Fortune)</td>
+      </tr>
+  </table>
   <div class=' entry'>
     <hr />
     @if(@Model.Characters.Count == 0)
     {
-      <p>This Trait is not available in anything yet. :(</p>
+      <p>This Trait is not used yet :(</p>
     }
     else
     {
-      <h4>Characters this Trait is available in:</h4>
+      <h4>Characters with this trait:</h4>
       <ul>
         @foreach(var join in Model.Characters)
         {

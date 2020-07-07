@@ -29,6 +29,14 @@
     {
       <p>@Html.ActionLink("Add new Trait", "Create")</p>
     }
-
+        <li>Page: @ViewBag.page</li>
+         <p>@Html.ActionLink("Back a Page", "Index", "Traits", new{page = ViewBag.page - 1})</p>
+         
+         <p>@Html.ActionLink("1", "Index", "Traits", new{page = ViewBag.page, pageCount = 1 })</p>
+         
+         <p>@Html.ActionLink("2", "Index", "Traits", new{page = ViewBag.page, pageCount = 2})</p>
+         
+         <p>@Html.ActionLink("3", "Index", "Traits", new{page = ViewBag.page, pageCount = 3})</p>
+         <p>@Html.ActionLink("Next Page", "Index", "Traits", new{page = ViewBag.page + 1})</p>
   </div>
 </div>

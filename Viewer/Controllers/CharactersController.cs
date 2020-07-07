@@ -23,12 +23,16 @@ namespace Viewer.Controllers
             _db = db;
         }
 
-        public IActionResult Index(int page = 1)
+        public IActionResult Index(int page = 1, int pageCount = 2)
         {
             IQueryable<Object> charQuery = Character.GetCharacters().AsQueryable();
-            charQuery = PaginationHelper.GetPaged(charQuery, page, 3);
+            if(page <= 0 ){
+               page = 1;
+            }
+            ViewBag.pageCount = pageCount;
+            charQuery = PaginationHelper.GetPaged(charQuery, page, pageCount);
             List<Character> results = charQuery.Cast<Character>().ToList();
-            
+            ViewBag.page = page;
             return View(results);
         }
 

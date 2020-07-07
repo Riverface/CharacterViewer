@@ -14,13 +14,19 @@ namespace Viewer.Controllers
         public TraitsController(ViewerContext db)
         {
             _db = db;
-            ViewBag.robert = "a big weenie";
         }
 
-        public ActionResult Index()
-        {
-            List<Trait> model = _db.Traits.ToList();
-            return View(model);
+        public IActionResult Index(int page, int pageCount)
+        {   
+            IQueryable<Object> traitQuery = Trait.GetTraits().AsQueryable();
+            if(page == 0 ){
+               page = 1;
+            }
+            ViewBag.pageCount = pageCount;
+            ViewBag.page = page;
+            traitQuery = PaginationHelper.GetPaged(traitQuery, page, pageCount);
+            List<Trait> results = traitQuery.Cast<Trait>().ToList();
+            return View(results);
         }
 
         public ActionResult Create()

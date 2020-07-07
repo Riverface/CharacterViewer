@@ -11,7 +11,7 @@ namespace Viewer.Models
 {
     public static class PaginationHelper
     {
-        public static IQueryable<Object> GetPaged(IQueryable<Object> characterQuery, int page, int pageSize = 2)
+        public static IQueryable<Object> GetPaged(IQueryable<Object> characterQuery, int page, int pageSize = 1)
         {
             int TotalCount = characterQuery.Count();
             double pageCount = (int)Math.Ceiling(Convert.ToDouble(TotalCount) / pageSize);
